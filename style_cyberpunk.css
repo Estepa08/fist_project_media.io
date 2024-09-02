@@ -1,0 +1,615 @@
+body {
+  width: 1920px;
+  height: 4334px;
+  margin: auto auto;
+}
+
+.hero {
+  /* box-sizing: content-box; */
+  width: 100%;
+  height: 1000px;
+}
+
+.bg_image {
+  background-image: url('image/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  top: 20px;
+  width: 1280px;
+  height: 74px;
+  margin: auto;
+}
+
+.nav_logo {
+  width: 296px;
+  height: 74px;
+}
+
+.nav_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  width: 379px;
+  height: 30px;
+}
+
+.box_icon {
+  width: 30px;
+  height: 30px;
+}
+
+.yellow_card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(248, 242, 0, 1);
+  clip-path: polygon(8% 0%, 100% 0%, 100% 85%, 92% 100%, 0% 100%, 0% 15%);
+  width: 624px;
+  height: 369px;
+  margin: 557px 320px 0px 976px;
+  /* обязательно посмореть позже */
+}
+
+h1 {
+  width: 484px;
+  height: 126px;
+  margin: 70px 70px 25px 70px;
+  font-family: 'Archangelsk';
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 63.3px;
+  text-align: left;
+}
+
+.btn_know {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  margin-left: 70px;
+  width: 272px;
+  height: 78px;
+  background-color: black;
+  color: rgba(248, 242, 0, 1);
+}
+
+.description {
+  width: 1920px;
+  height: 777px;
+}
+
+.text_container {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 320px;
+  margin-top: 70px;
+  width: 996px;
+  height: 213px;
+}
+
+h2 {
+  font-family: 'Archangelsk';
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 63.3px;
+  text-align: left;
+}
+
+.description p {
+  width: 952px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+  color: gray;
+  word-wrap: break-word;
+}
+
+span {
+  font-family: 'Roboto';
+  color: rgba(82, 190, 220, 1);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+}
+
+.rect_container {
+  overflow: hidden;
+  display: grid;
+  width: 1280px;
+  height: 424px;
+  margin-left: 320px;
+  margin-top: 70px;
+  grid-template-rows: 196px 196px;
+  grid-template-columns: 460px 460px;
+  gap: 32px 32px;
+  grid-template-areas:
+    'rectangle1 rectangle2 rectangle2'
+    'rectangle3 rectangle2 rectangle2';
+}
+
+.rectangle {
+  /* border: 1px solid red; */
+  clip-path: polygon(8% 0%, 100% 0%, 100% 85%, 92% 100%, 0% 100%, 0% 15%);
+}
+
+.rectangle1 {
+  background-image: url('image/Rectangle1.png');
+}
+.rectangle2 {
+  grid-area: rectangle2;
+  background-image: url('image/Rectangle3.png');
+}
+
+.rectangle3 {
+  background-image: url('image/Rectangle2.png');
+}
+
+.decoration_img {
+  /* margin-top: 70px; */
+  width: 100%;
+  height: 70px;
+  background-image: url('image/22_1.png');
+}
+
+.promotion {
+  position: relative;
+  width: 100%;
+  height: 814px;
+  background-color: black;
+}
+
+.flex_console {
+  position: absolute;
+  top: 288px;
+  left: 812px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 32px;
+  width: 788px;
+  height: 456px;
+}
+
+.bg_console_img {
+  background-image: url('image/bg_console_img.png');
+}
+.box {
+  margin-top: 25px;
+  width: 296px;
+  height: 351px;
+}
+
+.xbox {
+  background-image: url('image/xbox.png');
+}
+
+.sony {
+  background-image: url('image/sony.png');
+}
+
+.form_container {
+  position: absolute;
+  left: 320px;
+  top: 361px;
+  color: #ffffff;
+  width: 460px;
+  height: 383px;
+}
+
+.promo_logo {
+  margin-left: 320px;
+  width: 132px;
+  height: 132px;
+  background-image: url('image/promo_logo.png');
+}
+
+h3 {
+  position: relative;
+  left: 484px;
+  bottom: 63px;
+  height: 63px;
+  width: 569px;
+  font-family: 'Archangelsk';
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 63.3px;
+  color: white;
+}
+
+.promo_text {
+  width: 952px;
+  height: 91px;
+  margin-left: 320px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+  color: white;
+}
+
+input {
+  width: 100%;
+  height: 35px;
+  border-bottom: 1px solid grey;
+}
+
+.input_style {
+  margin-top: 35px;
+}
+
+.text_screenshot {
+  width: 186px;
+  height: 42px;
+  margin: 39px 135px;
+}
+
+h4 {
+  text-decoration: underline;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  text-align: left;
+}
+
+.text_input::placeholder {
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  text-align: left;
+}
+
+.screenshot {
+  text-align: center;
+  margin-bottom: 35px;
+  width: 460px;
+  height: 120px;
+  border: 0.8px dashed grey;
+  border-style: dashed;
+
+  border-width: 3px;
+}
+
+.btn_send {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+  text-align: center;
+
+  margin: 0;
+  color: black;
+  width: 192px;
+  height: 59px;
+  background-color: rgba(248, 242, 0, 1);
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: black;
+  display: block;
+  border: 1px solid rgba(119, 119, 119, 1);
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+.text_lable_checkbox {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 280px;
+  height: 14px;
+}
+
+.text_lable {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14.06px;
+  text-align: left;
+}
+
+.checkbox:checked {
+  background-color: black;
+  position: relative;
+}
+
+/* Стиль для галочки */
+.checkbox:checked::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid rgba(248, 242, 0, 1); /* Желтый цвет */
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.decoration_img2 {
+  background-image: url('image/22_2.png');
+  width: 100%;
+  height: 70px;
+}
+
+.monitor {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(248, 242, 0, 1);
+  width: 100%;
+  height: 676px;
+}
+
+.monitor_img {
+  margin-top: 70px;
+  margin-right: 32px;
+  background-image: url('image/monitor_img.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 624px;
+  height: 430px;
+}
+
+.hp_img {
+  position: absolute;
+  top: 526px;
+  left: 362px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 540px;
+  height: 80px;
+}
+
+.hp_logo_box1 {
+  width: 80px;
+  height: 80px;
+}
+
+.hp_logo_box3 {
+  width: 320px;
+  height: 80px;
+}
+
+.monitor_text_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  right: 320px;
+  width: 624px;
+  height: 526px;
+}
+
+h5 {
+  width: 100%;
+  height: auto;
+  font-family: 'Archangelsk';
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 63.3px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.monitor_text {
+  width: 100%;
+  height: auto;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.list_flex {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.list_flex li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+li {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  text-align: left;
+}
+
+ul {
+  width: 100%;
+  height: auto;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+ul li img {
+  height: 32px;
+  margin-right: 10px;
+}
+
+.btn_more {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+  text-align: center;
+  width: 194px;
+  height: 59px;
+  background-color: black;
+  color: rgba(248, 242, 0, 1);
+  margin-top: 40px;
+}
+
+.game_buy {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 1920px;
+  height: 717px;
+  background-color: black;
+}
+
+.game_buy_img {
+  margin-right: 32px;
+  width: 944px;
+  height: 100%;
+  background-image: url('image/game_buy_img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game_buy_text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  width: 624px;
+  height: 575px;
+}
+h6 {
+  width: 100%;
+  height: 126px;
+  margin-bottom: 25px;
+
+  font-family: 'Archangelsk';
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 63.3px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.game_buy_list {
+  width: 100%;
+  height: 169px;
+  margin-bottom: 70px;
+}
+ul.game_buy_list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: left;
+  color: rgba(82, 190, 220, 1);
+}
+
+.game_buy_list > li {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.game_buy_platform {
+  width: 319px;
+  height: 186px;
+
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  text-align: left;
+  color: rgba(82, 190, 220, 1);
+}
+
+.all_platform {
+  margin-top: 24.85px;
+  width: 319px;
+  height: 133px;
+  background-image: url('image/all_platform.png');
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.footer_flex_logo,
+.footer_flex_text {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.footer_flex_logo {
+  margin-right: 390.95px;
+}
+
+.footer_logo {
+  width: 296px;
+  height: 74px;
+  background-image: url('image/footer_logo.png');
+}
+
+.footer_logo2 {
+  width: 172.05px;
+  height: 74px;
+  background-image: url('image/footer_logo2.png');
+}
+
+.footer_text {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+  text-align: left;
+
+  width: 84px;
+  height: 21px;
+}
+
+.footer_text2 {
+  width: 272px;
+  height: 21px;
+}
+
+.cellar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+}
